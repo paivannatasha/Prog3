@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>4 Boxes - Box Model</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 0 auto; /* centraliza na tela */
+  gap: 20px; /* espaço entre as caixas */
+}
+
+/* Caixas */
+.caixa {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  padding: 20px;
+  border: 5px solid blue;
+  box-sizing: border-box; /* mantém tamanho fixo */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Exemplo com 4 Boxes</h2>
+
+<div class="container">
+  <div class="caixa">Box 1</div>
+  <div class="caixa">Box 2</div>
+  <div class="caixa">Box 3</div>
+  <div class="caixa">Box 4</div>
+</div>
+
+</body>
+</html>
